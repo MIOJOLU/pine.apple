@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<style>
+    footer {
+        color: white
+    }
+
+    footer a {
+        color: white;
+    }
+
+    .logo {
+
+        padding-bottom: 0px;
+
+    }
+
+
+    .nav {
+        background-color: #44ad45;
+        padding-top: 0px;
+        align-items: center;
+    }
+
+    #carouselExampleCaptions {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .login a {
+        display: inline;
+        margin: auto;
+    }
+
+    .usuario {
+        background-color: white;
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: rgb(185, 184, 184);
+        color: grey;
+
+    }
+
+    .carrosel_4 {
+        display: grid;
+    }
+
+    .busca {
+        padding-top: 30px;
+        padding-left: 0px;
+        margin-left: 0px;
+
+    }
+
+    .entrar {
+        padding-top: 25px;
+        padding-left: 40px;
+        padding-right: 0px;
+
+    }
+
+    .barra {
+        background-color: black;
+        padding-bottom: 10px;
+        height: 40px;
+    }
+    .menu_desktop
+    {
+        display: grid;
+       
+    }
+
+    .paises {
+
+
+        text-align: center;
+    }
+
+    .not1 img {
+        max-width: 350px;
+        display: flex;
+    }
+
+    .not1 h1 {
+        font-size: 30px;
+        display: flex;
+    }
+
+    body {
+        background-image: url("https://i.pinimg.com/originals/d0/7d/d4/d07dd4da24e538705a0251e1de0a3846.png");
+    }
+
+    .indicadores li {
+        position: relative;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100% !important;
+        bottom: -30px;
+        background-color: black !important;
+    }
+
+    .indicadores2 li {
+        position: relative;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100% !important;
+        bottom: -50px;
+        background-color: black !important;
+    }
+
+    .indicadores2peq li {
+        position: relative;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100% !important;
+        bottom: -50px;
+        background-color: black !important;
+    }
+
+    .indicadores4 li {
+        position: relative;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100% !important;
+        bottom: -40px;
+        background-color: black !important;
+
+    }
+
+
+    .banner_peq {
+        display: none;
+    }
+
+
+    .imagem2 {
+        padding-top: 20px;
+        width: 100%;
+
+    }
+
+    .imagem1 {
+        padding-top: 20px;
+
+        width: 100%;
+    }
+
+
+    .texto {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .news_imagem {
+        max-width: 900px;
+    }
+
+    .news {
+        padding-top: 10px;
+        max-width: 340px;
+        ;
+    }
+
+    .titulo2 {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .texto2 {
+
+        font-size: 15px;
+        text-align: justify;
+
+    }
+
+
+
+    .titulo3 {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .texto3 {
+        font-size: 15px;
+        text-align: justify;
+        justify-content: center;
+
+    }
+
+
+
+    .textoinicial {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .textoinicial_mobile {
+        display: none;
+    }
+
+.textoinicial_tablet
+{
+    display: none;
+}
+
+    .textosegundo {
+        padding-bottom: 20px;
+    }
+
+    .labels {
+        display: inline;
+    }
+
+    .profile-card-3 {
+        font-family: 'Open Sans', Arial, sans-serif;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        height: 368px;
+        border: none;
+    }
+
+    .profile-card-3 .background-block {
+        float: left;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .profile-card-3 .background-block .background {
+        width: 100%;
+        vertical-align: top;
+        opacity: 0.9;
+        -webkit-filter: blur(0.5px);
+        filter: blur(0.5px);
+        -webkit-transform: scale(1.8);
+        transform: scale(2.8);
+    }
+
+    .profile-card-3 .card-content {
+        width: 100%;
+        padding: 15px 25px;
+        color: #232323;
+        float: left;
+        background: #efefef;
+        height: 50%;
+        border-radius: 0 0 5px 5px;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .profile-card-3 .card-content::before {
+        content: '';
+        background: #efefef;
+        width: 120%;
+        height: 100%;
+        left: 11px;
+        bottom: 51px;
+        position: absolute;
+        z-index: -1;
+        transform: rotate(-13deg);
+    }
+
+    .profile-card-3 .profile {
+        border-radius: 50%;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        max-width: 100px;
+        opacity: 1;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(255, 255, 255, 1);
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        z-index: 99999;
+    }
+
+    .profile-card-3 h2 {
+        margin: 0 0 5px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    .profile-card-3 h2 small {
+        display: block;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .profile-card-3 i {
+        display: inline-block;
+        font-size: 16px;
+        color: #232323;
+        text-align: center;
+        border: 1px solid #232323;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    .profile-card-3 .icon-block {
+        float: left;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .profile-card-3 .icon-block a {
+        text-decoration: none;
+    }
+
+    .profile-card-3 i:hover {
+        background-color: #232323;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .carrosel4 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .carrosel5 {
+        display: grid;
+    }
+
+    .carrosel5_mob {
+        display: none;
+    }
+
+    .newsbaixo {
+        padding-top: 20px;
+        max-width: 250px;
+    }
+
+    .carrosel_4 {
+        padding-bottom: 20px;
+    }
+
+    .video {
+        display: grid;
+        padding-top: 20px;
+    }
+
+    .video_peq {
+        display: none;
+    }
+
+    .video2 {
+        padding-top: 20px;
+    }
+
+    .artigos,
+    .youtube {
+        width: 100%;
+    }
+
+    .banner_grande {
+        display: grid;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    .menu_mobile {
+        display: none;
+    }
+
+    .footer_mobile {
+        display: none;
+    }
+
+    .carrosel_mobile {
+        display: none;
+    }
+
+    .textoinicial_grande {
+        display: grid;
+    }
+
+    .carrosel2_grande {
+        display: grid;
+    }
+
+    .carrosel2_mobile {
+        display: none;
+    }
+
+    .musica_pequena {
+        display: none;
+    }
+
+    .carrosel4_mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 641px) {
+        footer {
+            color: white;
+            max-width: 1800px;
+        }
+        .textoinicial_tablet
+        {
+            display: none;
+        }
+
+        .video {
+            display: none;
+
+        }
+
+        .video_peq {
+            display: grid;
+            padding-top: 20px;
+        }
+
+        .carrosel_mobile {
+            display: grid;
+        }
+
+        .textoinicial_mobile {
+            display: none;
+        }
+
+        .banner_peq {
+            display: grid;
+
+
+        }
+
+        .carrosel_4 {
+            display: none;
+        }
+
+        .carrosel4_mobile {
+            display: grid;
+        }
+
+        #loginebusca {
+            display: none;
+        }
+
+        .logo {
+            width: 100%;
+            align-items: center;
+        }
+
+        .menu_mobile {
+            display: grid;
+
+        }
+
+        .footer_mobile {
+            display: flex;
+        }
+
+        .banner_grande {
+            display: none;
+        }
+
+        .menu_desktop {
+            display: none;
+
+        }
+
+        .footer_normal {
+            display: none;
+        }
+
+        .textoinicial_grande {
+            display: none;
+        }
+
+        .carrosel2_grande {
+            display: none;
+        }
+
+        .musica_grande {
+            display: none;
+        }
+
+        .musica_pequena {
+            display: grid;
+        }
+
+        .carrosel5 {
+            display: none;
+        }
+
+        .carrosel5_mob {
+            display: grid;
+        }
+
+    }
+
+
+    @media screen and (max-width: 1204px) and (min-width: 375px) {
+        #loginebusca {
+            display: none;
+        }
+
+        .logo {
+            width: 100%;
+            align-items: center;
+        }
+
+        .menu_mobile {
+            display: grid;
+
+        }
+
+        .menu_desktop {
+            display: none;
+
+        }
+
+        .carrosel_mobile {
+            display: grid;
+        }
+        .textoinicial_tablet {
+        display: grid;
+    }
+
+        .textoinicial_mobile {
+            display: none;
+        }
+
+        .textoinicial_grande {
+            display: none;
+        }
+
+        .carrosel2_grande {
+            display: none;
+        }
+
+        .musica_grande {
+            display: none;
+        }
+        .musica_pequena {
+            display: grid;
+        }
+        .carrosel5 {
+            display: none;
+        }
+
+        .carrosel5_mob {
+            display: grid;
+        }
+
+    }
+</style>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <title>Pine.Apple news</title>
+</head>
+
+<body class>
+    <div class="barra">
+        <p style="text-align: center; color: white; padding-bottom: 0px;">
+            22 de abril de 2020
+        </p>
+    </div>
+    <header class="container cabecalho">
+
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <img class="logo" style="width:100%;"
+                    src="https://i.pinimg.com/originals/d2/d4/ad/d2d4adf182fc41e29c180a93830ff53f.png">
+            </div>
+            <div class="entrar col-6" id="loginebusca">
+                <form class="form-inline entrar">
+                    <div class="usuario form-group mb-1">
+                        <label for="staticEmail2" class="sr-only"> Usuário</label>
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Usuário">
+                    </div>
+                    <div class="senha form-group mx-sm-3 mb-1">
+                        <label for="inputPassword2" class="sr-only">Senha</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn  mb-1 " style="background-color: #44ad45;">Entrar</button>
+                </form>
+                <div style="padding-left: 80px;">
+                    <a style="text-decoration: none; color: black;font-size:14px;" href="#">
+                        <p>Não tem cadastro? Inscreva-se |
+                    </a>
+                    <a style="text-decoration: none; color: black; font-size:14px;" href="#">Esqueci minha senha</a></p>
+                </div>
+            </div>
+
+            <div class="busca col-3 " id="loginebusca">
+                <div class="paises">
+                    Países:
+                    <img src="https://i.imgur.com/Qwh3RWG.png">
+
+                    <img src="https://i.imgur.com/jiDgERM.png">
+
+                    <img src="https://i.imgur.com/zrtlalK.png">
+
+                    <img src="https://i.imgur.com/nGVgGIE.png">
+
+                    <img src="https://i.imgur.com/Y6wUSUE.png">
+
+                </div>
+                <input class="form-control" type="text" placeholder="Buscar no site" readonly>
+
+            </div>
+        </div>
+
+
+
+
+
+            <div class="row">
+                <div class="col-12 menu_desktop ">
+                    <ul class="nav d-flex">
+                        <li class="nav-item" style="border: white; border-style:solid;">
+                            <a style="text-decoration: none;color: black; font-weight: bolder; font-size: 30px;; "
+                                class="nav-link active" href="#">HOME</a>
+                            <a><i class="fas fa-home" id="menu-icon"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <i style="padding-left: 30px;" class="fas fa-bullhorn"></i>
+
+
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    NOTÍCIAS
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Agora</a>
+                                    <a class="dropdown-item" href="#">Últimos dias</a>
+                                    <a class="dropdown-item" href="#">Últimos meses</a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <div class="menu_des d-flex" >
+
+                            <li class="nav-item">
+                                <a style="color: black; " class="nav-link active" href="#">Entretenimento</a>
+                            </li>
+                            <li class="nav-item">
+                            <li class="nav-item">
+                                <a style="color: black; " class="nav-link active" href="#">Culinária</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: black; " class="nav-link active" href="#">Testes e quiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: black; " class="nav-link active" href="#">Artigos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: black; " class="nav-link active" href="#">Música</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: black; " class="nav-link active" href="#">Filmes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: black; " class="nav-link active" href="#">Vídeos</a>
+                            </li>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Miojolu
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Sobre nós</a>
+                                <a class="dropdown-item" href="#"></a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        </li>
+
+                    </ul>
+                </div>
+                </div>
+                <!-- Menu mobile inicio-->
+                <div class="menu_mobile">
+                    <ul class="nav border border-danger border-left-0 border-right-0" id="menu"></ul>
+                    <div class="navbar navbar-inverse navbar fixed-top cel" style="background-color: #44ad45;">
+
+                        <div class="container-fluid">
+
+                            <!-- Menu hamburger Inicio -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#exemplo-navbar-collapse" aria-expanded="false"><i
+                                        class="fas fa-bars"></i>
+
+                                    <span class="sr-only">Navegacao</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+
+                                </button>
+
+                                <!-- Título Direita do menu-->
+                                <a class="navbar-brand" href="#" target="_blank"></a>
+
+                            </div>
+                            <!-- Menu hamburger Fim -->
+
+                            <div class="collapse navbar-collapse" id="exemplo-navbar-collapse">
+
+                                <!-- Links Inicio -->
+                                <ul class="nav navbar-nav navbar-left">
+
+                                    <!-- Menu dropdown Inicio -->
+                                    <!-- Menu dropdown Fim -->
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#"><i class="fas fa-home"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-light" href="#"><i
+                                                class="fas fa-user-circle"></i>Artistas</a>
+                                    </li>
+                                    <li class="nav-item nemu">
+                                        <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown"><i
+                                                class="fas fa-newspaper"></i>Notícias<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Agora </a>
+                                            <a class="dropdown-item" href="#">Últimos dias</a>
+                                            <a class="dropdown-item" href="#">últios</a>
+                                        </ul>
+                                    </li>
+                                    <li class=" nav-item nemu">
+                                        <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown"><i
+                                                class="fas fa-tags"></i>Artigos<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <a class="dropdown-item " href="#">Entretenimento</a>
+                                            <a class="dropdown-item " href="#">Culinária</a>
+                                            <a class="dropdown-item " href="#">Política</a>
+                                            <a class="dropdown-item " href="#">Comentários</a>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown nav-item nemu mune">
+                                        <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown"><i
+                                                class="fas fa-building"></i>Nossa empresa<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <a class="dropdown-itemr" href="#">Nosso Time</a>
+                                            <a class="dropdown-item " href="#">Nosso Sonho</a>
+                                            <a class="dropdown-item b " href="#">Contatos</a>
+                                        </ul>
+                                    </li>
+                                    <li class=" nav-item nemu">
+                                        <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown"><i
+                                                class="fas fa-newspaper"></i>Junte-se a nós:<b class="caret"></b></a>
+                                        <ul class="dropdown-menu ">
+                                            <a class="dropdown-item " href="#"><i style="padding-right: 20px;"
+                                                    class="fas fa-angle-double-down"></i>Inscreva-se</a>
+                                            <a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt"
+                                                    style="padding-right: 20px;"></i>Login</a>
+                                        </ul>
+                                    </li>
+                                    <li class=" nav-item nemu mune">
+                                        <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown"><i
+                                                class="fas fa-globe"></i><b class="caret"></b></a>
+                                        <ul class="dropdown-menu ">
+                                            <a class="dropdown-item  text-light" href="#"><img
+                                                    style="padding-left: 45px"
+                                                    src='https://i.imgur.com/Qwh3RWG.png'></a>
+                                            <a class="dropdown-item  text-light" href="#"><img
+                                                    src='https://i.imgur.com/Y6wUSUE.png'
+                                                    style="padding-left: 45px"></a>
+                                            <a class="dropdown-item text-light" href="#"><img
+                                                    src='https://imgur.com/nGVgGIE.png' style="padding-left: 45px"></a>
+                                            <a class="dropdown-item text-light" href="#"><img
+                                                    src='https://imgur.com/zrtlalK.png' style="padding-left: 45px"></a>
+                                            <a class="dropdown-item  text-light" href="#"><img
+                                                    src='https://imgur.com/jiDgERM.png' style="padding-left: 45px"></a>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <!-- Links Fim -->
+
+                                <!-- Caixa de Pesquisa Inicio -->
+                                <div class="navbar-right">
+
+                                    <!-- Formulario caixa pesquisa Inicio -->
+                                    <form class="navbar-form" role="search" method="get" action="#">
+
+                                        <div class="input-group">
+
+                                            <input type="text" class="form-control" placeholder="Digite sua pesquisa..."
+                                                name="Filtro" id="Filtro">
+
+                                            <!-- Display icone Lupa -->
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i
+                                                        class="glyphicon glyphicon-search"></i></button><button
+                                                    class="btn btn-outline- my-2     my-sm-0 " type="submit"><i
+                                                        class="fas fa-search text-white"></i></button>
+                                            </div>
+
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+    <main class="container">
+        <div class="carrosel_mobile">
+            <h1 style="background-color: #ff1616; color: white; font-size: 30px;font-weight: lighter;
+            text-align: center;">
+                PRINCIPAIS NOTÍCIAS</h1>
+        </div>
+        <div class="row">
+
+            <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://img.r7.com/images/aplicativo-sus-16032020112843259" class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>ALERTA CORONA</h5>
+                                <p>Em meio a pandemia de Coronavírus, uma das maiores preocupações é como se proteger e
+                                    quando procurar o hospital mais próximo.
+                                    Para ajudar a população a se informar, o SUS disponibilizou um aplicativo de
+                                    celular, venha conferir suas ferramentas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://s2.glbimg.com/r8zDbwGhlV0QKPJ4FF33rvYSU4c=/0x0:1280x720/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/3/G/I2za95TAAjMfmBJ3dhew/whatsapp-image-2020-04-19-at-01.53.06.jpeg"
+                                class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>BIG BROTHER BRASIL 2020</h5>
+                                <p>Quase na reta final, Globo decide extender o BBB20 por 4 dias. Veja como estão os
+                                    brothers agora e o que aconteceu nas útilmas horas</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://conteudo.imguol.com.br/c/entretenimento/90/2019/07/17/harry-potter-1563393226252_v2_900x506.png"
+                                class="d-block w-100">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Maratonar ficou mais interessante</h5>
+                                <p>Site dis que vai pagar R$5.000 a quem maratonar filmes de Harry Potter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="container">
+            <div class="not1 row ">
+
+                <div class="col-4 col textoinicial_grande ">
+                    <img class="imagem1"
+                        src="https://img.estadao.com.br/fotos/crop/1200x1200/resources/jpg/5/3/1584037031235.jpg">
+                    <img class="imagem2"
+                        src="https://s2.glbimg.com/tb94VRoxO8Bq8NSRvPaAaChTM3E=/0x0:2000x2000/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/l/g/kmkZdjTheycZGq62meGg/untitled-collage-3-.jpg">
+                </div>
+
+
+                <div class=" col-4">
+                    <div class="textoinicial_grande">
+                        <h1 style="color: #ff1616; text-align: center; font-weight: bolder;">
+                            NINGUÉM SEGURA A MÃO DE NINGUÉM
+                        </h1>
+                        <p>
+                            Em tempos de epidemia é preciso se cuidar e abandonar literalmente por tempo indeterminado a
+                            famosa
+                            frase "Ninguém solta a mão de ninguém"! Apesar da brincadeira no Twitter confira as dicas
+                            que a infectologista
+                            deu para fugir do Corona.
+                        </p>
+                        <button style="border-radius: 10px; border-style: solid; border-color: #ff1616;" type="button"
+                            class="btn  btn-lg btn-block"><a
+                                href="https://www.unasus.gov.br/noticia/ministerio-da-saude-disponibiliza-aplicativo-sobre-o-coronavirus"
+                                target="_blank" style="text-decoration: none; color: black;">Ler mais...</a></button>
+
+                        <div class="texto mt-5 ">
+                            <h1 style="color: #44ad45; text-align: center; font-weight: bolder; ">
+                                SHOWS Á DISTANCIA: A NOVA TENDÊNCIA
+                            </h1>
+                            <p>
+                                Transmissões ao vivo já estão até virando piada na web,
+                                mas o fato é que personalidades estão na contramão do tédio da quarentena para produzir
+                                conteúdo.
+                                Lives de cantores como Marilia Mendonça balançam a internet. Veja a agenda completa dos
+                                shows virtuais.
+                            </p>
+                            <button style="border-radius: 10px; border-style: solid; border-color:#44ad45; " type="
+                                button" class="btn btn-lg btn-block">Ler
+                                mais...</button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="textoinicial_tablet">
+                        <div class="container">
+                        <div class="row">
+                        <div class="col-6">
+                            <img class="imagem1"
+                                src="https://img.estadao.com.br/fotos/crop/1200x1200/resources/jpg/5/3/1584037031235.jpg">
+                        <h1 style="color: #ff1616; text-align: center; font-weight: bolder;">
+                            NINGUÉM SEGURA A MÃO DE NINGUÉM
+                        </h1>
+                        <p>
+                            Em tempos de epidemia é preciso se cuidar e abandonar literalmente por tempo indeterminado a
+                            famosa
+                            frase "Ninguém solta a mão de ninguém"! Apesar da brincadeira no Twitter confira as dicas
+                            que a infectologista
+                            deu para fugir do Corona.
+                        </p>
+                        <button style="border-radius: 10px; border-style: solid; border-color: #ff1616;" type="button"
+                            class="btn  btn-lg btn-block"><a
+                                href="https://www.unasus.gov.br/noticia/ministerio-da-saude-disponibiliza-aplicativo-sobre-o-coronavirus"
+                                target="_blank" style="text-decoration: none; color: black;">Ler mais...</a></button>
+                             </div>
+                        <div class="col-6">
+
+
+                        <div class="texto  ">
+                            <img class="imagem2" style="margin-top: -50px;  width: 100%;"
+                                src="https://s2.glbimg.com/tb94VRoxO8Bq8NSRvPaAaChTM3E=/0x0:2000x2000/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/l/g/kmkZdjTheycZGq62meGg/untitled-collage-3-.jpg">
+                        
+                            <h1 style="color: #44ad45; text-align: center; font-weight: bolder; ">
+                                SHOWS Á DISTANCIA: A NOVA TENDÊNCIA
+                            </h1>
+                            <p>
+                                Transmissões ao vivo já estão até virando piada na web,
+                                mas o fato é que personalidades estão na contramão do tédio da quarentena para produzir
+                                conteúdo.
+                                Lives de cantores como Marilia Mendonça balançam a internet. Veja a agenda completa dos
+                                shows virtuais.
+                            </p>
+                            <button style="border-radius: 10px; border-style: solid; border-color:#44ad45; " type="
+                                button" class="btn btn-lg btn-block">Ler
+                                mais...</button>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+               
+                <div class="textoinicial_mobile">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="imagem1"
+                                style=" width: 100%;" src="https://img.estadao.com.br/fotos/crop/1200x1200/resources/jpg/5/3/1584037031235.jpg">
+                            <img class="imagem2 pt-5"
+                            style=" width: 100%;" src="https://s2.glbimg.com/tb94VRoxO8Bq8NSRvPaAaChTM3E=/0x0:2000x2000/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/l/g/kmkZdjTheycZGq62meGg/untitled-collage-3-.jpg">
+                        </div>
+                        <div class="col-8">
+                            <h1 style="color: #ff1616; text-align: center; font-weight: bolder; font-size: 14px;">
+                                NINGUÉM SEGURA A MÃO DE NINGUÉM
+                            </h1>
+                            <p style="font-size: 10px;">
+                                Apesar da brincadeira no Twitter confira as dicas
+                                que a infectologista
+                                deu para fugir do Corona.
+                            </p>
+                            <button type="button"
+                                style="border-radius: 10px; border-style: solid; border-color:#ff1616; width: 100%;"
+                                class="btn  btn-sm"><a
+                                    href="https://www.unasus.gov.br/noticia/ministerio-da-saude-disponibiliza-aplicativo-sobre-o-coronavirus"
+                                    target="_blank" style="text-decoration: none; color: black;">Ler mais...</a>
+                            </button>
+
+                            <div class="texto pt-4 ">
+                                <h1 style="color: #44ad45; text-align: center; font-weight: bolder;font-size: 14px; ">
+                                    SHOWS Á DISTANCIA: A NOVA TENDÊNCIA
+                                </h1>
+                                <p style=font-size:10px>
+                                    Transmissões ao vivo já estão até virando piada na web,
+                                    mas o fato é que personalidades estão usando da quarentena para produzir
+                                    conteúdo.
+                                </p>
+                                <button type="button"
+                                    style="border-radius: 10px; border-style: solid; border-color:#44ad45; width: 100%;"
+                                    class="btn  btn-sm"><a
+                                        href="https://g1.globo.com/pop-arte/musica/noticia/2020/03/25/a-era-das-lives-shows-a-distancia-indicam-a-cara-da-musica-pop-durante-a-quarentena.ghtml"
+                                        target="_blank" style="text-decoration: none; color: black;">Ler mais...</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-4 carrosel2_grande">
+                    <img class="pb-3 " style="width: 100%;"
+                        src="https://i.pinimg.com/originals/ad/a0/51/ada051306e7f7128f123547decc2e193.png">
+
+                    <div id="carouselExampleIndicators-2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators indicadores">
+                            <li data-target="#carouselExampleIndicators-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators-2" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators-2" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <div class="card card-image"
+                                    style="background-image: url(https://static1.purebreak.com.br/articles/3/88/48/3/@/335404-one-direction-completa-9-anos-fas-relem-239x239-3.jpg);">
+
+                                    <!-- Content -->
+                                    <div
+                                        class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                        <div>
+
+                                            <h3 class="card-title pt-2"><strong>TBT 10
+                                                    ANOS 1D</strong></h3>
+                                            <p>Os fãs de One Direction esperam uma reunião para a
+                                                comemoração.</p>
+                                            <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia mais</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card-image"
+                                        style="background-image: url(https://s2.glbimg.com/PQ3n-01vFi94XSUBVcB3WNzn72I=/smart/e.glbimg.com/og/ed/f/original/2017/03/10/295c5d63c0902ce6486c1a37d8387fd0.jpg);">
+
+                                        <!-- Content -->
+                                        <div
+                                            class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                            <div>
+
+                                                <h3 class="card-title pt-2"><strong>DIÁRIO DE UM PRINCESA NA
+                                                        PANDEMIA</strong></h3>
+                                                <p>Autora de "O Diário da princesa" escreve edição
+                                                    especial sobre coronavírus.</p>
+                                                <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia mais</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+
+                                <div class="card card-image"
+                                    style="background-image: url(https://conteudo.imguol.com.br/c/bol/fotos/6e/2017/01/27/oprah-winfrey-1485538235741_615x300.jpg);">
+
+                                    <!-- Content -->
+                                    <div
+                                        class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                        <div>
+
+                                            <h3 class="card-title pt-2"><strong>AJUDA HOLLYWOODIANA</strong></h3>
+                                            <p>Oprah doa cerca de R$52 milhões para ajudar o combate ao covid-19.</p>
+                                            <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia mais</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card card-image"
+                                    style="background-image: url(https://abrilexame.files.wordpress.com/2019/03/gettyimages-1090899284-e1571347302962.jpg);">
+
+                                    <!-- Content -->
+                                    <div
+                                        class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                        <div>
+
+                                            <h3 class="card-title pt-2"><strong>MARATONAR</strong></h3>
+                                            <p>Confira uma lista de séries para maratonar na quarentena.</p>
+                                            <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia mais</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+
+
+                                <div class="card card-image"
+                                    style="background-image: url(https://s2.glbimg.com/4LUwn6pH05pIst-C0q_fmRLnkkY=/620x430/e.glbimg.com/og/ed/f/original/2016/02/04/friends_1.jpg);">
+
+                                    <!-- Content -->
+                                    <div
+                                        class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                        <div>
+
+                                            <h3 class="card-title pt-2"><strong>FRIENDS</strong></h3>
+                                            <p>Será possível um reencontro?</p>
+                                            <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia mais</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card card-image"
+                                    style="background-image: url(https://midias.agazeta.com.br/2020/02/12/brothers-e-sisters-na-sala-do-bbb-20-183925.jpg);">
+
+                                    <!-- Content -->
+                                    <div
+                                        class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                        <div>
+
+                                            <h3 class="card-title pt-2"><strong>QUEM É VOCÊ NO BBB20?</strong></h3>
+                                            <p>Faça o teste e descubra.</p>
+                                            <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia mais</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carrosel2_mobile">
+                    <div class="row">
+                        <div class="row">
+                        <div class="col-12">
+
+                            <img class="pb-3 " style="width: 100%;"
+                                src="https://i.pinimg.com/originals/ad/a0/51/ada051306e7f7128f123547decc2e193.png"></div>
+                            </div>
+                            <div id="carouselExampleIndicators-2" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators indicadores">
+                                    <li data-target="#carouselExampleIndicators-2" data-slide-to="0" class="active">
+                                    </li>
+                                    <li data-target="#carouselExampleIndicators-2" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators-2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+
+                                        <div class="card card-image"
+                                            style="background-image: url(https://static1.purebreak.com.br/articles/3/88/48/3/@/335404-one-direction-completa-9-anos-fas-relem-239x239-3.jpg);">
+
+                                            <!-- Content -->
+                                            <div
+                                                class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                                <div>
+
+                                                    <h3 class="card-title pt-2"><strong>TBT 10
+                                                            ANOS 1D</strong></h3>
+                                                    <p>Os fãs de One Direction esperam uma reunião para a
+                                                        comemoração.</p>
+                                                    <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia
+                                                        mais</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="card card-image"
+                                                style="background-image: url(https://s2.glbimg.com/PQ3n-01vFi94XSUBVcB3WNzn72I=/smart/e.glbimg.com/og/ed/f/original/2017/03/10/295c5d63c0902ce6486c1a37d8387fd0.jpg);">
+
+                                                <!-- Content -->
+                                                <div
+                                                    class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                                    <div>
+
+                                                        <h3 class="card-title pt-2"><strong>DIÁRIO DE UM PRINCESA NA
+                                                                PANDEMIA</strong></h3>
+                                                        <p>Autora de "O Diário da princesa" escreve edição
+                                                            especial sobre coronavírus.</p>
+                                                        <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia
+                                                            mais</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+
+
+                                        <div class="card card-image"
+                                            style="background-image: url(https://conteudo.imguol.com.br/c/bol/fotos/6e/2017/01/27/oprah-winfrey-1485538235741_615x300.jpg);">
+
+                                            <!-- Content -->
+                                            <div
+                                                class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                                <div>
+
+                                                    <h3 class="card-title pt-2"><strong>AJUDA HOLLYWOODIANA</strong>
+                                                    </h3>
+                                                    <p>Oprah doa cerca de R$52 milhões para ajudar o combate ao
+                                                        covid-19.</p>
+                                                    <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia
+                                                        mais</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card card-image"
+                                            style="background-image: url(https://abrilexame.files.wordpress.com/2019/03/gettyimages-1090899284-e1571347302962.jpg);">
+
+                                            <!-- Content -->
+                                            <div
+                                                class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                                <div>
+
+                                                    <h3 class="card-title pt-2"><strong>MARATONAR</strong></h3>
+                                                    <p>Confira uma lista de séries para maratonar na quarentena.</p>
+                                                    <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia
+                                                        mais</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-item">
+
+
+                                        <div class="card card-image"
+                                            style="background-image: url(https://s2.glbimg.com/4LUwn6pH05pIst-C0q_fmRLnkkY=/620x430/e.glbimg.com/og/ed/f/original/2016/02/04/friends_1.jpg);">
+
+                                            <!-- Content -->
+                                            <div
+                                                class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                                <div>
+
+                                                    <h3 class="card-title pt-2"><strong>FRIENDS</strong></h3>
+                                                    <p>Será possível um reencontro?</p>
+                                                    <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia
+                                                        mais</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card card-image"
+                                            style="background-image: url(https://midias.agazeta.com.br/2020/02/12/brothers-e-sisters-na-sala-do-bbb-20-183925.jpg);">
+
+                                            <!-- Content -->
+                                            <div
+                                                class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                                <div>
+
+                                                    <h3 class="card-title pt-2"><strong>QUEM É VOCÊ NO BBB20?</strong>
+                                                    </h3>
+                                                    <p>Faça o teste e descubra.</p>
+                                                    <a class="btn btn-pink"><i class="fas fa-clone left"></i> Leia
+                                                        mais</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img style="width: 100%; padding-top: 10px;"
+                        src="https://i.pinimg.com/originals/80/a5/24/80a52447adbdc4651f24859a64f15125.png">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-8 pt-4 col-12">
+                    <div style="width:100%; align-content:flex-end;">
+                    <div class="card mb-3" style="padding-bottom: 0px;">
+                        <img src="https://conteudo.imguol.com.br/c/galeria/e2/2020/03/05/rio-mostra-tensao-em-cena-da-parte-4-de-la-casa-de-papel-1583428845120_v2_1170x540.jpg"
+                            style="width: 100%">
+
+
+                        <div class="card-body">
+                            <h5 class="card-title">REMEMBER LA CASA DE PAPEL</h5>
+                            <p class="card-text">Antes de assistir a quarta temporada, confira a lista dos principais
+                                momentos da terceira.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="padding-bottom: 0px">
+                        <img style="width: 100%;"
+                            src="https://s2.glbimg.com/ERascmEVtYd36gQMMBib97oU4uo=/0x0:1366x768/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/L/x/iEA5olTnuf1NlDQ8HmHQ/2020-04-18-61-.png">
+                        <div class="card-body">
+                            <h5 class="card-title">FESTIVAL ONE WORLD: TOGETHER AT HOME</h5>
+                            <p class="card-text">Fotos</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-4 musica_grande">
+                    <div class=" col-12">
+                        <img style="width:100%;"
+                            src="https://i.pinimg.com/originals/f1/18/9a/f1189a047109650f16e545677351496e.png">
+                    </div>
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators indicadores2">
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-lg-6 mt-4">
+                                        <iframe src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+                                            width="300" height="300" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media" style="padding-left:10px;"></iframe>
+
+                                        <iframe src="https://open.spotify.com/embed/track/127QTOFJsJQp5LbJbu3A1y"
+                                            width="300" height="300" style="padding-left:10px;" frameborder="0"
+                                            allowtransparency="true" allow="encrypted-media"></iframe>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-6 mt-4">
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-lg-6 mt-4">
+                                        <iframe src="https://open.spotify.com/embed/track/3PfIrDoz19wz7qK7tYeu62"
+                                            width="300" height="300" style="padding-left:10px;" frameborder="0"
+                                            allowtransparency="true" allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/0fZMlUHRvXu3OvMsPf8pah"
+                                            width="300" height="300" frameborder="0" style=" padding-top: 10px;"
+                                            allowtransparency="true" allow="encrypted-media"></iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-lg-6 mt-4">
+                                        <iframe src="https://open.spotify.com/embed/track/7eJMfftS33KTjuF7lTsMCx"
+                                            width="300" height="300" frameborder="0" allowtransparency="true"
+                                            style="padding-top: 10px;" allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/0nbXyq5TXYPCO7pr3N8S4I"
+                                            width="300" height="300" frameborder="0" allowtransparency="true"
+                                            style="padding-left: 10px;" allow="encrypted-media"></iframe>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4 col-lg-6 mt-4">
+                                        <iframe src="https://open.spotify.com/embed/track/1rgnBhdG2JDFTbYkYRZAku"
+                                            width="300" height="300" frameborder="0" style=" padding-top:10px;"
+                                            allowtransparency="true" allow="encrypted-media"></iframe>
+                                        <iframe src="https://open.spotify.com/embed/track/5F1WBnQCkJljhOT6jdvRMy"
+                                            width="300" height="300" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <iframe src="https://open.spotify.com/embed/track/22LAwLoDA5b4AaGSkg6bKW"
+                                        width="300" height="300" frameborder="0" allowtransparency="true"
+                                        style=" padding-top:10px;" allow="encrypted-media"></iframe>
+                                    <iframe src="https://open.spotify.com/embed/track/0HpmcsVCiaIw4j5vnaN0LW"
+                                        width="300" height="300" frameborder="0" allowtransparency="true"
+                                        allow="encrypted-media" style=" padding-top:10px;"></iframe>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <!--MUSICA PEQUENO-->
+                <div class="musica_pequena">
+                    <div class="row ">
+                        <div class="col-12">
+                            <div class=" col-12">
+                                <img style="width:100%;"
+                                    src="https://i.pinimg.com/originals/f1/18/9a/f1189a047109650f16e545677351496e.png">
+                            </div>
+                            <div id="carouselExampleIndicators3peq" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators indicadores2peq">
+                                    <li data-target="#carouselExampleIndicators3peq" data-slide-to="0" class="active">
+                                    </li>
+                                    <li data-target="#carouselExampleIndicators3peq" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators3peq" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators3peq" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators3peq" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-12 mt-4 " style="padding-left: 55px;">
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    allow="encrypted-media" style=""></iframe>
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/127QTOFJsJQp5LbJbu3A1y"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    allow="encrypted-media"></iframe>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12  mt-4" style="padding-left: 55px;">
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/3PfIrDoz19wz7qK7tYeu62"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    allow="encrypted-media"></iframe>
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/0fZMlUHRvXu3OvMsPf8pah"
+                                                    width="250" height="200" frameborder="0" style=" padding-top: 10px;"
+                                                    allowtransparency="true" allow="encrypted-media"></iframe>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 mt-4" style="padding-left: 55px;">
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/7eJMfftS33KTjuF7lTsMCx"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    style="padding-top: 10px;" allow="encrypted-media"></iframe>
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/0nbXyq5TXYPCO7pr3N8S4I"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    style="padding-left: 10px;" allow="encrypted-media"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 mt-4" style="padding-left: 55px;">
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/1rgnBhdG2JDFTbYkYRZAku"
+                                                    width="250" height="200" frameborder="0" style=" padding-top:10px;"
+                                                    allowtransparency="true" allow="encrypted-media"></iframe>
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/5F1WBnQCkJljhOT6jdvRMy"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    allow="encrypted-media"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-12 mt-4" style="padding-left: 55px;">
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/22LAwLoDA5b4AaGSkg6bKW"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    style=" padding-top:10px;" allow="encrypted-media"></iframe>
+                                                <iframe
+                                                    src="https://open.spotify.com/embed/track/0HpmcsVCiaIw4j5vnaN0LW"
+                                                    width="250" height="200" frameborder="0" allowtransparency="true"
+                                                    allow="encrypted-media"></iframe>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="banner_grande" style="width: 100%;">
+                            <div class="col-12">
+                                <img class="artigos"
+                                    src="https://i.pinimg.com/originals/c0/a9/cd/c0a9cdca47cc6c3c06a4c36e40ba3e75.png">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="banner_peq">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <img class="artigos" style="padding-top: 20px;"
+                                    src="https://i.pinimg.com/originals/72/69/f9/7269f9bad7835b169fe9f87bc798574e.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carrosel_4">
+                        <div id="carouselExampleIndicators4" class="carousel slide carrosel4" data-ride="carousel">
+                            <ol class="carousel-indicators indicadores2">
+                                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+
+                            </ol>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4 ">
+                                            <div class="card profile-card-3">
+                                                <div class="background-block">
+                                                    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                        alt="profile-sample1" class="background" />
+                                                </div>
+                                                <div class="profile-thumb-block">
+                                                    <img src="https://f.i.uol.com.br/fotografia/2019/09/20/15690194235d85561f604b5_1569019423_1x1_th.jpg"
+                                                        alt="profile-image" class="profile" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>Sylvia Colombo<small>POLÍTICA</small></h3>
+                                                        <div>"Se o governo colombiano não cumprir sua parte, ex-membros
+                                                            das Farc
+                                                            serão massacrados."</div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                                página</button>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="card profile-card-3">
+                                                <div class="background-block">
+                                                    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                        alt="profile-sample1" class="background" />
+                                                </div>
+                                                <div class="profile-thumb-block">
+                                                    <img src="https://conteudo.imguol.com.br/ca/2020/03/11/aline-diniz-150-1583936718791_150x150.jpg"
+                                                        alt="profile-image" class="profile" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>Aline Diniz<small>Cinema</small></h3>
+                                                        <div>"5 séries curtinhas e leves para relaxar no final de
+                                                            semana"</div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                                página</button>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="card profile-card-3">
+                                                <div class="background-block">
+                                                    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                        alt="profile-sample1" class="background" />
+                                                </div>
+                                                <div class="profile-thumb-block">
+                                                    <img src="https://conteudo.imguol.com.br/c2/2018/05/22/claudia-assef---autor-1527003319466_150x150.png"
+                                                        alt="profile-image" class="profile" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>Claudia Assef<small>Entretenimento</small></h3>
+                                                        <div> "Palcos enormes, multidões coladas na grade e megaturnês:
+                                                            coisa do
+                                                            passado?"</div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                                página</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card profile-card-3">
+                                                <div class="background-block">
+                                                    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                        alt="profile-sample1" class="background" />
+                                                </div>
+                                                <div class="profile-thumb-block">
+                                                    <img src="https://conteudo.imguol.com.br/c/entretenimento/a5/2016/12/09/pagina-5-1481316859998_150x150.png"
+                                                        alt="profile-image" class="profile" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>Rodrigo Casarin<small>ESPORTES</small></h3>
+                                                        <div>PÁGINA CINCO</div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                                página</button>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="card profile-card-3">
+                                                <div class="background-block">
+                                                    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                        alt="profile-sample1" class="background" />
+                                                </div>
+                                                <div class="profile-thumb-block">
+                                                    <img src="https://conteudo.imguol.com.br/c/entretenimento/dc/2016/12/09/barsinski-1481314384209_150x150.png"
+                                                        alt="profile-image" class="profile" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>André Barcinski<small>Culinária</small></h3>
+                                                        <div>"Comer é prazer"</div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                                página</button>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="card profile-card-3">
+                                                <div class="background-block">
+                                                    <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                        alt="profile-sample1" class="background" />
+                                                </div>
+                                                <div class="profile-thumb-block">
+                                                    <img src="https://randomuser.me/api/portraits/men/41.jpg"
+                                                        alt="profile-image" class="profile" />
+                                                </div>
+                                                <div class="card-content">
+                                                    <h2>Justin Mccoy<small>Jogos digitais</small></h3>
+                                                        <div>"Brinquedo dos adultos"</div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                                página</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrosel4_mobile">
+                        <div id="carouselExampleIndicatorsp" class="carousel slide carrosel4" data-ride="carousel">
+                            <ol class="carousel-indicators indicadores2">
+                                <li data-target="#carouselExampleIndicatorsp" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicatorsp" data-slide-to="1">
+                                <li data-target="#carouselExampleIndicatorsp" data-slide-to="2">
+                                <li data-target="#carouselExampleIndicatorsp" data-slide-to="3">
+                                <li data-target="#carouselExampleIndicatorsp" data-slide-to="4">
+                                <li data-target="#carouselExampleIndicatorsp" data-slide-to="5"></li>
+
+                                </li>
+
+                            </ol>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <div class="col-12 ">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                    alt="profile-sample1" class="background" />
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://f.i.uol.com.br/fotografia/2019/09/20/15690194235d85561f604b5_1569019423_1x1_th.jpg"
+                                                    alt="profile-image" class="profile" />
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Sylvia Colombo<small>POLÍTICA</small></h3>
+                                                    <div>"Se o governo colombiano não cumprir sua parte, ex-membros das
+                                                        Farc
+                                                        serão massacrados."</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                            página</button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+
+                                    <div class="col-12">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                    alt="profile-sample1" class="background" />
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://conteudo.imguol.com.br/ca/2020/03/11/aline-diniz-150-1583936718791_150x150.jpg"
+                                                    alt="profile-image" class="profile" />
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Aline Diniz<small>Cinema</small></h3>
+                                                    <div>"5 séries curtinhas e leves para relaxar no final de semana"
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                            página</button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                    alt="profile-sample1" class="background" />
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://conteudo.imguol.com.br/c2/2018/05/22/claudia-assef---autor-1527003319466_150x150.png"
+                                                    alt="profile-image" class="profile" />
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Claudia Assef<small>Entretenimento</small></h3>
+                                                    <div> "Palcos enormes, multidões coladas na grade e megaturnês:
+                                                        coisa do
+                                                        passado?"</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                            página</button>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                    alt="profile-sample1" class="background" />
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://conteudo.imguol.com.br/c/entretenimento/a5/2016/12/09/pagina-5-1481316859998_150x150.png"
+                                                    alt="profile-image" class="profile" />
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Rodrigo Casarin<small>ESPORTES</small></h3>
+                                                    <div>PÁGINA CINCO</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                            página</button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                    alt="profile-sample1" class="background" />
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://conteudo.imguol.com.br/c/entretenimento/dc/2016/12/09/barsinski-1481314384209_150x150.png"
+                                                    alt="profile-image" class="profile" />
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>André Barcinski<small>Culinária</small></h3>
+                                                    <div>"Comer é prazer"</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                            página</button>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="col-12">
+                                        <div class="card profile-card-3">
+                                            <div class="background-block">
+                                                <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                                                    alt="profile-sample1" class="background" />
+                                            </div>
+                                            <div class="profile-thumb-block">
+                                                <img src="https://randomuser.me/api/portraits/men/41.jpg"
+                                                    alt="profile-image" class="profile" />
+                                            </div>
+                                            <div class="card-content">
+                                                <h2>Justin Mccoy<small>Jogos digitais</small></h3>
+                                                    <div>"Brinquedo dos adultos"</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Visitar
+                                            página</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+
+                    <div class="video">
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="youtube"
+                                    src="https://i.pinimg.com/originals/19/56/6f/19566fbbd9bc4903441bd39fd9a8320e.png">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="video_peq">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <img style="padding-top: 20px; width: 100%;"
+                                    src="https://i.pinimg.com/originals/15/a8/92/15a8927ef9699a9d56568155be7dcc21.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carrosel5" style="padding-left: 200px; padding-bottom: 10px;">
+                        <div id="carouselExampleIndicators5" class="carousel slide video2 " data-ride="carousel">
+                            <ol class="carousel-indicators indicadores4">
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <iframe width="640" height="395" src="https://www.youtube.com/embed/ETQpu4xHvBE"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="640" height="395" src="https://www.youtube.com/embed/hxN-bFamxE8"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="640" height="395" src="https://www.youtube.com/embed/Nqr5wBXydkQ"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="carrosel5_mob col-12 pl-0 ml-0">
+                            <div style=" padding-bottom: 10px;">
+                                <div id="carouselExampleIndicators5p" class="carousel slide video2 "
+                                    data-ride="carousel">
+                                    <ol class="carousel-indicators indicadores4">
+                                        <li data-target="#carouselExampleIndicators5p" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselExampleIndicators5p" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators5p" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <iframe width="100%" height="384"
+                                                src="https://www.youtube.com/embed/ETQpu4xHvBE" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <iframe width="100%" height="384"
+                                                src="https://www.youtube.com/embed/hxN-bFamxE8" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <iframe width="100%" height="384"
+                                                src="https://www.youtube.com/embed/Nqr5wBXydkQ" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer style="background-color:#44ad45 !important;">
+        <div class="container footer_normal">
+            <div class="row">
+                <div class="col-4 col-sm-2 col-md-4">
+                    <h1 style="font-size: 20px; padding-top: 20px; text-align: center;">Sobre Pine.apple news</h1>
+                    <p style="font-size: 14px;text-align:justify;">Somos um jornal que tenta unir informação com
+                        diversão! Além do mais esse jornal
+                        foi criado por uma aluna do curso de Ciência da Computação do primeiro semestre. Para saber mais
+                        informações, basta clicar em um
+                        dos links abaixo:</p>
+                    <div class="row" style="text-align: center; ;">
+                        <div class="col-6 col-sm-2 col-md-4">
+                            <a href="">Home</a><br>
+                            <a href="">A marca</a><br>
+                            <a href="">Jorna virtual</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="">Editores</a><br>
+                            <a href="">Criação</a><br>
+                            <a href="">História</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-4  d-flex justify-content-center">
+                    <div class='row' style="text-decoration: none;">
+                        <div class="col-12 d-flex justify-content-center">
+                            <h1 style="font-size: 20px;  text-align: center; padding-top: 20px;">Links rápidos</h1>
+                        </div>
+                        <div class="col-4">
+                            <a href="">Home</a>
+                            <a href="">Notícias</a>
+                            <a href="">Últimos meses</a>
+                            <a href="">últimas horas</a>
+                            <a href="">Sobre nós</a>
+                            <a href="">Entretenimento</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="">Culinária</a>
+                            <a href="">Testes e quiz</a>
+                            <a href="">Artigo</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="">Música</a>
+                            <a href="">Filme</a>
+                            <a href="">Filmes</a>
+                            <a href="">Privacy Policy</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h1 style="font-size: 20px; padding-top: 20px;">Nos siga nas redes</h1>
+                    <i class="fab fa-instagram"></i> <a href="#"> @pine.apple_news</a><br>
+                    <i class="fab fa-facebook"></i> <a href="#"> Pine.apple_news</a><br>
+                    <i class="fab fa-twitter"></i><a href="#"> Pine.apple_news</a><br>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="copy d-flex justify-content-center">
+                        <div col='col-12 d-flex justify-content-center'>
+                            <i class="far fa-copyright"></i> Copyright 2020. Todos direitos reservados a
+                            Pine.apple news
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class=" container footer_mobile">
+            <div class="row">
+
+                <div class="col-6">
+                    <h1 style="font-size: 20px; padding-top: 20px; text-align: center;">Sobre Pine.apple news</h1>
+                    <p style="font-size: 14px;text-align:justify;">Somos um jornal que tenta unir informação com
+                        diversão! Além do mais esse jornal
+                        foi criado por uma aluna do curso de Ciência da Computação do primeiro semestre.
+                </div>
+                <div class="col-6">
+                    <h1 style="font-size: 20px; padding-top: 20px;">Nos siga nas redes</h1>
+                    <i class="fab fa-instagram"></i> <a href="#"> @pine.apple_news</a><br>
+                    <i class="fab fa-facebook"></i> <a href="#"> Pine.apple_news</a><br>
+                    <i class="fab fa-twitter"></i><a href="#"> Pine.apple_news</a><br>
+
+                </div>
+                <div class="row">
+
+                    <div col='col-12 d-flex'>
+                        <p style=" font-size: 10px;padding-left: 50px; ;"> <i class="far fa-copyright"></i> Copyright
+                            2020. Todos direitos reservados a
+                            Pine.apple news</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/d07912339e.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
