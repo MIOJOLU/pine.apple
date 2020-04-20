@@ -1,0 +1,22 @@
+.logo
+{
+    max-width: 90px;
+    padding-bottom: 10px;
+}
+.cima
+{
+    font-size: 15px;
+   
+    background-color: cornflowerblue;
+}
+.nav
+{
+    background-color: #fa7777;
+    padding-top: 0px; 
+    align-items: center;
+}
+
+#carouselExampleCaptions
+{
+    padding-top: 15px;
+}
